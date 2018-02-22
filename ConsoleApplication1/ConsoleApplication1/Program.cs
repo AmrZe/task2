@@ -87,12 +87,12 @@ namespace ConsoleApplication1
             // int[] y = new int[10];
             // ElawadyDataStructureTest.Test.GetGrade(y);
             // Console.In.Read();
-            Dictionary<string, Subject>[] taha = new Dictionary<string, Subject>[10];
+            Dictionary<string, Subject>[] s = new Dictionary<string, Subject>[10];
             for (int i = 9; i >= 0; i--)
             {
-                taha[i] = new Dictionary<string, Subject>();
+                s[i] = new Dictionary<string, Subject>();
             }
-            Test.GetGrade(taha);
+            Test.GetGrade(s);
             Console.In.Read();
 
 
