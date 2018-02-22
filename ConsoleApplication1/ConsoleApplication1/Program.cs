@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ElawadyDataStructureTest;
 
 namespace ConsoleApplication1
 {
@@ -83,11 +84,17 @@ namespace ConsoleApplication1
             ElawadyDataStructureTest.Subject RE = new ElawadyDataStructureTest.Subject("Robotics Engineering", 524);
             ElawadyDataStructureTest.Subject ITDIS = new ElawadyDataStructureTest.Subject("Digital Integrated Systems Implementing and Testing", 524);
             ElawadyDataStructureTest.Subject P_2 = new ElawadyDataStructureTest.Subject("Project 2", 525);
-            int[] y = new int[10];
-            ElawadyDataStructureTest.Test.GetGrade(y);
+            // int[] y = new int[10];
+            // ElawadyDataStructureTest.Test.GetGrade(y);
+            // Console.In.Read();
+            Dictionary<string, Subject>[] taha = new Dictionary<string, Subject>[10];
+            for (int i = 9; i >= 0; i--)
+            {
+                taha[i] = new Dictionary<string, Subject>();
+            }
+            Test.GetGrade(taha);
             Console.In.Read();
-            
-            
+
 
 
         }
